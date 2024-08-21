@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <h6>Name</h6>
+    <input type="text" name="name" id="name">
+    <h6>Email</h6>
+    <input type="text" name="email" id="email">
+    <br />
+    <br />
+    <Button>Submit</Button>
+    <script>
+        const username = document.querySelector('#name');
+        const useremail = document.querySelector('#email');
+
+        fetch('/create', (req,res) => {
+            
+        }).then(res => res.json()).then(err => console.log(err))
+    </script>
+</body>
+
+</html>
