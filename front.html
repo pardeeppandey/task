@@ -15,15 +15,17 @@
     <input type="text" name="email" id="email">
     <br />
     <br />
-    <Button>Submit</Button>
+    <Button onclick="sendData()">Submit</Button>
     <script>
+        function sendData(){
         const username = document.querySelector('#name');
         const useremail = document.querySelector('#email');
 
-        fetch('/create', (req,res) => {
-            
+        axios.post('http://localhost:5050/api/create',{
+            username,
+            useremail
         }).then(res => res.json()).then(err => console.log(err))
-    </script>
+    }
 </body>
 
 </html>
