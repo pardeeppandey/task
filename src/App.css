@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.main {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;  
+}
+
+.route {
+  float:left; 
+  padding:20px;
+  overflow-y: auto; 
+  width:100%;
+  background-color: #ecf0f1;
+}
